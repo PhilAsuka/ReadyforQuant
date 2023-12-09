@@ -15,6 +15,8 @@ EXPOSE 80
 
 # 定义环境变量
 ENV NAME World
+ENV PYTHONPATH "${PYTHONPATH}:/app"
+
 
 # 在容器启动时运行python app.py
 CMD ["python", "app/services/websocket_client.py"]
