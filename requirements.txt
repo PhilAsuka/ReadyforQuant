@@ -1,0 +1,9 @@
+fastapi
+uvicorn
+pydantic
+httpx
+asyncio
+websockets
+sqlalchemy
+databases
+aiomysql
