@@ -25,7 +25,8 @@ def parse_message_and_create_market_data(data_item):
         vol_24h=float(data_item.get('vol24h', 0)),
         ts=int(data_item.get('ts')),  # Assuming 'ts' will always be present
         sod_utc0=data_item.get('sodUtc0'),
-        sod_utc8=data_item.get('sodUtc8')
+        sod_utc8=data_item.get('sodUtc8'),
+        received_time = datetime.utcnow()
     )
 
     return market_data_entry

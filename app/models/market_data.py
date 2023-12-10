@@ -1,6 +1,7 @@
 # app/models/market_data.py
-from sqlalchemy import Column, Integer, String, Float, BigInteger
+from sqlalchemy import Column, Integer, String, Float, BigInteger, DateTime
 from sqlalchemy.ext.declarative import declarative_base
+from datetime import datetime
 
 Base = declarative_base()
 
@@ -24,3 +25,4 @@ class MarketData(Base):
     ts = Column(BigInteger)
     sod_utc0 = Column(String(50))
     sod_utc8 = Column(String(50))
+    received_time = Column(DateTime, default=datetime.utcnow)
