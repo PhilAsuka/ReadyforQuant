@@ -23,6 +23,15 @@ class MovingAverageStrategy:
             await self.trade_queue.put('sell')
             self.last_action = 'sell'
 
+    def update_data_sync(self, one_minute_avg, two_minute_avg):
+        # 这是同步版本的update_data函数
+        if one_minute_avg > two_minute_avg and self.last_action != 'buy':
+            self.last_action = 'buy'
+        elif one_minute_avg < two_minute_avg and self.last_action != 'sell':
+            self.last_action = 'sell'
+        else:
+            self.last_action = None
+
     async def process_trades(self):
         while True:  # 持续运行的循环
             action = await self.trade_queue.get()  # 从队列中获取交易请求
