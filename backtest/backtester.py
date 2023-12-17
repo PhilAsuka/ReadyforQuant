@@ -71,7 +71,6 @@ def generate_signal(row):
 
 
 TRADE_FEE_RATE = 0.0001
-
 def simulate_trades(data_frame, strategy):
     trade_log = []
     position_opened = False

@@ -2,7 +2,6 @@
 
 import asyncio
 from collections import deque
-from app.services.trade_service import OKXTradeService  # 引入交易服务
 
 class MovingAverageStrategy:
     def __init__(self, short_window, long_window, trade_service, symbol):

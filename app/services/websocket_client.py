@@ -3,7 +3,7 @@ import asyncio
 import websockets
 import json
 from datetime import datetime
-from app.core.database import add_market_data, add_market_data_batch
+from app.core.database import add_market_data_batch
 from app.models.market_data import MarketData
 from app.strategies.simple_strategy import MovingAverageStrategy
 from datetime import datetime, timedelta
