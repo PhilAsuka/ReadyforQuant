@@ -10,6 +10,7 @@
 根据策略执行交易。
 
 项目进行：
+修改config.py文件
 通过docker容器，运行dockerfile文件，可以运行websocket_client.py文件(接收数据，并执行策略交易)
 
 Further development：
