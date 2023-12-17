@@ -13,7 +13,7 @@
 通过docker容器，运行dockerfile文件，可以运行websocket_client.py文件(接收数据，并执行策略交易)
 
 Further development：
-在fastapi的基础上进行前端的拓展，优化代码，补充功能块。
+在fastapi的基础上进行前端的拓展，优化代码，补充功能块(风险监控模块)。
 
 Core Components
 config.py: Configuration settings for database connections and API keys.
