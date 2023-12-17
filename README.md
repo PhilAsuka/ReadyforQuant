@@ -1,5 +1,4 @@
-# ReadyforQuant
-DEMO
+# ReadyforQuant(DEMO)
 
 此项目是量化交易系统的框架，目前只是demo状态
 
